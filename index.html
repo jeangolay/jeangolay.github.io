@@ -128,30 +128,13 @@ $(document).ready(function () {
 <!-- This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>. -->
 <!-- When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this: -->
 <pre class="r"><code>library(IDmining)
-library(raster)</code></pre>
-<pre><code>## Loading required package: sp</code></pre>
-<pre class="r"><code>library(colorRamps)
+library(raster)
+library(colorRamps)
 library(rgl)
 library(foreign)
 library(grDevices)
-library(fields)</code></pre>
-<pre><code>## Loading required package: spam</code></pre>
-<pre><code>## Loading required package: dotCall64</code></pre>
-<pre><code>## Loading required package: grid</code></pre>
-<pre><code>## Spam version 2.1-2 (2017-12-21) is loaded.
-## Type 'help( Spam)' or 'demo( spam)' for a short introduction 
-## and overview of this package.
-## Help for individual functions is also obtained by adding the
-## suffix '.spam' to the function name, e.g. 'help( chol.spam)'.</code></pre>
-<pre><code>## 
-## Attaching package: 'spam'</code></pre>
-<pre><code>## The following objects are masked from 'package:base':
-## 
-##     backsolve, forwardsolve</code></pre>
-<pre><code>## Loading required package: maps</code></pre>
-<pre><code>## See www.image.ucar.edu/~nychka/Fields for
-##  a vignette and other supplements.</code></pre>
-<pre class="r"><code>source(&quot;./Functions/makeTransparent.R&quot;)
+library(fields)
+source(&quot;./Functions/makeTransparent.R&quot;)
 
 df_dem &lt;- read.dbf(file=&quot;./Data/dem_100_zinal_marked_pts.dbf&quot;)[,c(4,5,3)]
 names(df_dem )&lt;-c(&quot;X&quot;,&quot;Y&quot;,&quot;Z&quot;)
